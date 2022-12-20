@@ -1,4 +1,4 @@
-No trabalho com Visão Computacional, tem-se a necessidade de analisar muitas imagens para o software conseguir processar com clareza o que ele
+Em trabalhos com Visão Computacional, tem-se a necessidade de analisar muitas imagens para o software conseguir processar com clareza o que ele
 está "enxergando".
 
 Muitas vezes, essas imagens precisam ser extraídas de vídeos. Nesses casos o uso desse algoritmo (main.py do arquivo) facilita e muito a vida do programador :)
