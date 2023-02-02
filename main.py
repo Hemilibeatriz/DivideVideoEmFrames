@@ -1,19 +1,18 @@
 import cv2
 import os
 
-def video_to_frames(video, path_output_dir):
-    # extrai os frames de um video(parametro) e os salva no diretório path_output_dir(parametro), nomeando os frames para "x.png" 
-    # x é o index do frame
-    vidcap = cv2.VideoCapture(video)
-    count = 0
-    while vidcap.isOpened():
-        success, image = vidcap.read()
-        if success:
-            cv2.imwrite(os.path.join(path_output_dir, '%d.png') % count, image)
-            count += 1
+def frames_de_video(entrada, caminho_saida):
+    entrada_capturada = cv2.VideoCapture(entrada)
+    cont = 0
+    while entrada_capturada.isOpened():
+        retorno, frame = entrada_capturada.read()
+
+        if retorno:
+            cv2.imwrite(os.path.join(caminho_saida, '%d.png') %cont, frame)
+            cont +=1
         else:
             break
     cv2.destroyAllWindows()
-    vidcap.release()
+    entrada_capturada.release()
 
-video_to_frames('C:\\Users\\hemili\\Desktop\\TCC\\teste.mp4', 'C:\\Users\\hemili\\Desktop\\TCC\\frames')
+frames_de_video('video.mp4','')
