@@ -7,4 +7,6 @@ Pois com ele, o vídeo é "quebrado" em frames (imagens) para que o algoritmo de
 
 O código foi desenvolvido no PyCharm, em um ambiente virtual!
 
+Link do vídeo no Youtube: https://youtu.be/hpX_L5dYh-g
+
 Bons estudos!!!
